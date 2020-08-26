@@ -4,41 +4,66 @@
     padding: 0;
 }
 
-.wrapper {
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    width: 90%;
+    height: 10vh;
+    margin: 20px auto;
     display: flex;
     flex-direction: row;
-    height: 100vh;
-    width: 100vw;
-
-    
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    border-bottom: 2px solid #581d22;
 }
 
-/* TEST */
-
-.content {
-    margin: 2%;
-    flex-grow: 1;
-}
-
-.header {
-    
-}
-
-.right {
-    background-image: url(./019_0216_114133.jpg);
-    background-size: contain;
-    height:100%;
-    flex-grow: 1;
-}
-
-.personal_photo {
-    
-}
-
-.about_name {
+h1 {
     color: #581d22;
-
+    margin: 10px;
+    font-size: 50px;
+    flex: 1;
 }
+
+header H3 {
+    color: color #413f54;
+    margin: 10px;
+    font-size: 38px;
+    flex: 1;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #581d22; */
+}
+
+section {
+    flex: 5;
+}
+
+.desc-photo {
+    display: none;
+}
+
+aside {
+    flex: 1;
+}
+
+.right-photo {
+    height: 80vh;
+}
+
+.personal-photo {
+    height: 100%;
+    z-index: -1;
+}
+
 
 /*
 color #581d22 marsala

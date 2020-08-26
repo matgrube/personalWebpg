@@ -6,29 +6,65 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="header_navbar_nav">
-            <img src="" class="header_navbar_logo">
-            <ul class="header_navbar_list">
-                <li class="header_navbar_listItem"><a href="#" class="nav_button" id="button_home">Home</a> </li>
-                <li class="header_navbar_listItem"><a href="#" class="nav_button" id="button_about">About</a> </li>
-                <li class="header_navbar_listItem"><a href="#" class="nav_button">Portfolio</a> </li>
-                <li class="header_navbar_listItem"><a href="#" class="nav_button" id="button_contact">Contact</a> </li>
-            </ul>
-        </nav>
-        <div class="content">
-            <main class="main_section" id="main_section">
-            </main>
-        </div>
-        <aside class="right">
-            <div></div>
-<!--            <img class="personal_photo" src="019_0216_114133.jpg" alt=""> -->
+    <header>
+        <h1>Mateusz Grube</h1>
+        <h3>JavaScript develo<span class="h3-wrong">pre</span><span class="h3-right">per</span></h3>
+    </header>
+    <main>
+        <section>
+            <div class="content">
+                <nav class="arrow-navigation">
+                    <ul class="navbar-list">
+                        <li class="nav-item"><button class="nav-button" id="button_about">About</button> </li>
+                        <li class="nav-item"><button class="nav-button" id="button_portfolio">Portfolio</button> </li>
+                        <li class="nav-item"><button class="nav-button" id="button_contact">Contact</button> </li>
+                        <li class="nav-item"><button class="nav-button" id="button_home">Technologies</button> </li>
+                    </ul>
+                </nav>
+                <div class="about">
+                    <section class="section-home">
+                        <p class="small-paragraph">Hello! My name is:</p>
+                        <H3>Mateusz Grube</H3>
+                        <p class="small-paragraph">And I am a...</p>
+                        <H5>Front-End JavaScript Developer</H5>
+                        <div class="desc-photo">
+                            <img class="personal-photo" src="019_0216_114133.jpg" alt="">
+                            <div class="overlayer"></div>
+                        </div>
+                        <p class="small-paragraph">I am a Front-End Developer living in Gdynia.</p>
+                        <p class="small-paragraph">My first line of code has been written back in 2005, when my deskmate encouraged me to try out the C++ language. I started out by learning from an on-line course in order to participate in coding competitions, like "Olimpiada Informatyczna Gimnazjalistów" (Secondary School Olympic Games in Computer Science).</p>
+                        <p class="small-paragraph">Unfortunately - the difference between what I was learning from the course and what my friend told me to do made me doubt the learning path that I have taken. The complexity of a language itself has made my doubts even more problematic and made me quit programming.</p>
+                        <p class="small-paragraph">Several years later, during my college studies at Gdańsk University of Technology I was considered quite a good student in the field of Python programming during Bioinformatics course. I did my best to help my friends to pass the final exam and succeeded in helping at least some of them.</p>
+                        <p class="small-paragraph">A few more years had to pass since I realized, that searching solutions to problems is what I really like to do.</p>
+                        <p class="small-paragraph">Since then I am pursuing a new career in the field of software development and I have started college studies at Polish-Japanese Academy of Computer Science</p>
+                    </section>
+                </div>
+                <div class="portfolio">
+                    <p class="small-paragraph">Work in progress</p>
+                </div>
+                <div class="contact">
+                    <h3>Contact me via:</h3>
+                    <p class="small-paragraph">LinkedIn</p>
+                    <p class="small-paragraph">Facebook</p>
+                    <p class="small-paragraph">GitHub</p>
+                </div>
+                <div class="technologies">
+                    <h3>Technologies that I use:</h3>
+                    <p class="small-paragraph">HTML5, CSS3, JavaScript, React</p>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <div class="right-photo">
+                <img class="personal-photo" src="./019_0216_114133-softcorner.jpg" alt="">
+            </div>
         </aside>
-    </div>
-    <script src="./script.js"></script>
+    </main>
+    <script src="./src/main.js"></script>
 </body>
 </html>
