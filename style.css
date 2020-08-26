@@ -40,14 +40,118 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* background-color: #581d22; */
 }
 
 section {
     flex: 5;
 }
 
+.arrow-navigation {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.up {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.down {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+
+.right {
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-bottom: 140px solid #357266;
+    margin-bottom: 10px;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 140px solid #357266;
+    margin-top: 10px;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-right: 140px solid #357266;
+    margin-right: 10px;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 140px solid #357266;
+    margin-left: 10px;
+}
+
+button {
+    border: none;
+    background-color: #357266;
+    color: #FFF;
+    height: 70px;
+    width: 140px;
+    font-size: 20px;
+}
+
+.about {
+    display: none;
+}
+
 .desc-photo {
+    display: none;
+}
+
+.portfolio {
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+.technologies {
     display: none;
 }
 
@@ -62,6 +166,16 @@ aside {
 .personal-photo {
     height: 100%;
     z-index: -1;
+}
+
+/* FUNCTIONAL */
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
 }
 
 

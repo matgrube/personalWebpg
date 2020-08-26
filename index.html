@@ -17,46 +17,51 @@
     </header>
     <main>
         <section>
-            <div class="content">
-                <nav class="arrow-navigation">
-                    <ul class="navbar-list">
-                        <li class="nav-item"><button class="nav-button" id="button_about">About</button> </li>
-                        <li class="nav-item"><button class="nav-button" id="button_portfolio">Portfolio</button> </li>
-                        <li class="nav-item"><button class="nav-button" id="button_contact">Contact</button> </li>
-                        <li class="nav-item"><button class="nav-button" id="button_home">Technologies</button> </li>
-                    </ul>
-                </nav>
-                <div class="about">
-                    <section class="section-home">
-                        <p class="small-paragraph">Hello! My name is:</p>
-                        <H3>Mateusz Grube</H3>
-                        <p class="small-paragraph">And I am a...</p>
-                        <H5>Front-End JavaScript Developer</H5>
-                        <div class="desc-photo">
-                            <img class="personal-photo" src="019_0216_114133.jpg" alt="">
-                            <div class="overlayer"></div>
-                        </div>
-                        <p class="small-paragraph">I am a Front-End Developer living in Gdynia.</p>
-                        <p class="small-paragraph">My first line of code has been written back in 2005, when my deskmate encouraged me to try out the C++ language. I started out by learning from an on-line course in order to participate in coding competitions, like "Olimpiada Informatyczna Gimnazjalistów" (Secondary School Olympic Games in Computer Science).</p>
-                        <p class="small-paragraph">Unfortunately - the difference between what I was learning from the course and what my friend told me to do made me doubt the learning path that I have taken. The complexity of a language itself has made my doubts even more problematic and made me quit programming.</p>
-                        <p class="small-paragraph">Several years later, during my college studies at Gdańsk University of Technology I was considered quite a good student in the field of Python programming during Bioinformatics course. I did my best to help my friends to pass the final exam and succeeded in helping at least some of them.</p>
-                        <p class="small-paragraph">A few more years had to pass since I realized, that searching solutions to problems is what I really like to do.</p>
-                        <p class="small-paragraph">Since then I am pursuing a new career in the field of software development and I have started college studies at Polish-Japanese Academy of Computer Science</p>
-                    </section>
+            <nav class="arrow-navigation">
+                <div class="up"  id="button_about">
+                    <div class="arrow-up"></div>
+                    <button class="nav-button">About</button>
                 </div>
-                <div class="portfolio">
-                    <p class="small-paragraph">Work in progress</p>
+                <div class="down">
+                    <div class="arrow-down" id="button_portfolio"></div>
+                    <button class="nav-button">Portfolio</button>
                 </div>
-                <div class="contact">
+                <div class="left">
+                    <div class="arrow-left" id="button_contact"></div>
+                    <button class="nav-button">Contact</button>
+                </div>
+                <div class="right" id="button_technologies">
+                    <div class="arrow-right"></div>
+                    <button class="nav-button">Technologies</button>
+                </div>
+            </nav>
+            <div class="about">
+                    <p class="small-paragraph">Hello! My name is:</p>
+                    <H3>Mateusz Grube</H3>
+                    <p class="small-paragraph">And I am a...</p>
+                    <H5>Front-End JavaScript Developer</H5>
+                    <div class="desc-photo"> 
+                        <img class="personal-photo" src="019_0216_114133.jpg" alt="">
+                    </div>
+                    <p class="small-paragraph">I am a Front-End Developer living in Gdynia.</p>
+                    <p class="small-paragraph">My first line of code has been written back in 2005, when my deskmate encouraged me to try out the C++ language. I started out by learning from an on-line course in order to participate in coding competitions, like "Olimpiada Informatyczna Gimnazjalistów" (Secondary School Olympic Games in Computer Science).</p>
+                    <p class="small-paragraph">Unfortunately - the difference between what I was learning from the course and what my friend told me to do made me doubt the learning path that I have taken. The complexity of a language itself has made my doubts even more problematic and made me quit programming.</p>
+                    <p class="small-paragraph">Several years later, during my college studies at Gdańsk University of Technology I was considered quite a good student in the field of Python programming during Bioinformatics course. I did my best to help my friends to pass the final exam and succeeded in helping at least some of them.</p>
+                    <p class="small-paragraph">A few more years had to pass since I realized, that searching solutions to problems is what I really like to do.</p>
+                    <p class="small-paragraph">Since then I am pursuing a new career in the field of software development and I have started college studies at Polish-Japanese Academy of Computer Science</p>
+            </div>
+            <div class="portfolio">
+                <p class="small-paragraph">Work in progress</p>
+            </div>
+            <div class="contact">
                     <h3>Contact me via:</h3>
                     <p class="small-paragraph">LinkedIn</p>
                     <p class="small-paragraph">Facebook</p>
                     <p class="small-paragraph">GitHub</p>
-                </div>
-                <div class="technologies">
+            </div>
+            <div class="technologies">
                     <h3>Technologies that I use:</h3>
                     <p class="small-paragraph">HTML5, CSS3, JavaScript, React</p>
-                </div>
             </div>
         </section>
         <aside>
@@ -65,6 +70,6 @@
             </div>
         </aside>
     </main>
-    <script src="./src/main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
