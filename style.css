@@ -34,6 +34,35 @@ header H3 {
     flex: 1;
 }
 
+.h3-typing {
+    position: relative;
+}
+
+.h3-typing::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: -10px;
+    border-right: 5px solid #413f54;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 main {
     width: 90%;
     margin: auto;
@@ -127,9 +156,9 @@ section {
 }
 
 button {
-    border: none;
-    background-color: #357266;
-    color: #FFF;
+    background-color: #fff;
+    border: 3px solid #357266;
+    color: #357266;
     height: 70px;
     width: 140px;
     font-size: 20px;
@@ -137,6 +166,22 @@ button {
 
 .about {
     display: none;
+}
+
+H4  {
+    font-size: 50px;
+    margin: 30px 30px 30px 47px;
+}
+
+H5 {
+    font-size: 35px;
+    margin: 15px 0 15px 30px;
+
+}
+
+.small-paragraph {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .desc-photo {
