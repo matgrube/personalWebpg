@@ -8,6 +8,11 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+main {
+    overflow: hidden;
+    height: 100%;
+}
+
 header {
     width: 90%;
     height: 10vh;
@@ -81,42 +86,56 @@ section {
     position: relative;
 }
 
+
+
 .up {
     position: absolute;
-    display: flex;
-    flex-direction: column;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.up div {
+    display: flex;
+    flex-direction: column;
+}
+
 .down {
     position: absolute;
-    display: flex;
-    flex-direction: column-reverse;
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
 
+.down div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .left {
     position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
 }
 
+.left div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .right {
     position: absolute;
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
     top: 50%;
     right: 10%;
     transform: translateY(-50%);
+}
+
+.right div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .arrow-up {
@@ -212,6 +231,16 @@ button {
     font-size: 20px;
 }
 
+.button {
+    margin: 0 auto;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
 .about {
     display: none;
 }
@@ -260,6 +289,8 @@ aside {
     height: 100%;
     z-index: -1;
 }
+
+
 
 /* FUNCTIONAL */
 
