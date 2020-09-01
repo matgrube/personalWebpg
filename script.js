@@ -4,15 +4,36 @@ const buttonContact = document.getElementById("button_contact");
 const buttonTechnologies = document.getElementById("button_technologies");
 
 const aboutPage = document.querySelector('.about');
+const portfolioPage = document.querySelector('.portfolio');
+const contactPage = document.querySelector('.contact');
+const technologiesPage = document.querySelector('.technologies');
 const navPage = document.querySelector('.arrow-navigation');
 
-
-buttonAbout.addEventListener("click", () => {
+const upArrow = () => {
     aboutPage.classList.add('visible');
     navPage.classList.add('invisible');
-    console.log(aboutPage);
-    console.log(navPage);
-});
+}
+
+const leftArrow = () => {
+    portfolioPage.classList.add('visible');
+    navPage.classList.add('invisible');
+}
+
+const downArrow = () => {
+    contactPage.classList.add('visible');
+    navPage.classList.add('invisible');
+}
+
+const rightArrow = () => {
+    technologiesPage.classList.add('visible');
+    navPage.classList.add('invisible');
+}
+
+buttonAbout.addEventListener("click", upArrow);
+buttonPortfolio.addEventListener("click", leftArrow);
+buttonContact.addEventListener("click", downArrow);
+buttonTechnologies.addEventListener("click", rightArrow);
+
 (function typeWriting() {
     const endings = ['JavaScript Developer', 'Computer Science Student', 'Technology enthusiast'];
     let count = 0;
@@ -44,4 +65,27 @@ buttonAbout.addEventListener("click", () => {
         }
         setTimeout(type, 300);
     }());
-}())
+}());
+
+
+
+const arrowKeys = () => {
+    document.onkeydown = (e) => {
+        e = e || window.event;
+        switch (e.keyCode) {
+            case 37:
+                leftArrow();
+                break;
+            case 39:
+                rightArrow();
+                break;
+            case 38:
+                upArrow();
+                break;
+            case 40:
+                downArrow();
+                break;
+        }
+    }
+}
+arrowKeys();
