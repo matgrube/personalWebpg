@@ -306,6 +306,10 @@ aside {
 /* MEDIA QUERIES */
 
 @media (max-aspect-ratio: 3/2) {
+    header {
+        flex-direction: column;
+    }
+
     .right-photo {
         display: none;
     }
