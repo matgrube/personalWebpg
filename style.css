@@ -10,7 +10,6 @@ body {
 
 main {
     overflow: hidden;
-    height: 100%;
 }
 
 header {
@@ -69,6 +68,7 @@ header H3 {
 }
 
 main {
+    height: 80vh;
     width: 90%;
     margin: auto;
     display: flex;
@@ -143,19 +143,19 @@ section {
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-bottom: 140px solid #357266;
-    margin-bottom: 30px;
+    border-bottom: 40px solid #357266;
+    margin-bottom: 10px;
 }
 
 .arrow-up-inside {
     position: absolute;
-    top: 30px;
+    top: 10px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-bottom: 140px solid #fff;
+    border-bottom: 40px solid #fff;
     margin-bottom: 0px;
 }
 
@@ -164,19 +164,19 @@ section {
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-top: 140px solid #357266;
-    margin-top: 30px;
+    border-top: 40px solid #357266;
+    margin-top: 10px;
 }
 
 .arrow-down-inside {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: 0;
     width: 0;
     height: 0;
     border-left: 70px solid transparent;
     border-right: 70px solid transparent;
-    border-top: 140px solid #fff;
+    border-top: 40px solid #fff;
     margin-top: 0px;
 }
 
@@ -185,19 +185,19 @@ section {
     height: 0;
     border-top: 70px solid transparent;
     border-bottom: 70px solid transparent;
-    border-right: 140px solid #357266;
-    margin-right: 30px;
+    border-right: 40px solid #357266;
+    margin-right: 10px;
 }
 
 .arrow-left-inside {
     position: absolute;
-    left: 30px;
+    left: 10px;
     top: 0;
     width: 0;
     height: 0;
     border-top: 70px solid transparent;
     border-bottom: 70px solid transparent;
-    border-right: 140px solid #fff;
+    border-right: 40px solid #fff;
     margin-right: 0px;
 }
 
@@ -206,19 +206,19 @@ section {
     height: 0;
     border-top: 70px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 140px solid #357266;
-    margin-left: 30px;
+    border-left: 40px solid #357266;
+    margin-left: 10px;
 }
 
 .arrow-right-inside {
     position: absolute;
-    right: 30px;
+    right: 10px;
     top: 0;    
     width: 0;
     height: 0;
     border-top: 70px solid transparent;
     border-bottom: 70px solid transparent;
-    border-left: 140px solid #fff;
+    border-left: 40px solid #fff;
     margin-left: 0px;
 }
 
@@ -229,6 +229,7 @@ button {
     height: 70px;
     width: 140px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .button {
@@ -302,6 +303,25 @@ aside {
     display: none;
 }
 
+/* MEDIA QUERIES */
+
+@media (max-aspect-ratio: 3/2) {
+    .right-photo {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .arrow-navigation {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .arrow-navigation {
+        transform: scale(0.7);
+    }
+}
 
 /*
 color #581d22 marsala
