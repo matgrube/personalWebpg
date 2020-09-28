@@ -1,0 +1,14 @@
+@import "./navigation_main";
+@import "./about";
+
+main {
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    section {
+        flex: 5;
+    }
+}

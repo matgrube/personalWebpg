@@ -1,0 +1,21 @@
+@media (max-aspect-ratio: 3/2) {
+    header {
+        flex-direction: column;
+    }
+
+    .right-photo {
+        display: none;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .arrow-navigation {
+        transform: scale(0.8);
+    }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    .arrow-navigation {
+        transform: scale(0.7);
+    }
+}

@@ -1,0 +1,15 @@
+@import "./utils";
+@import "./title_header";
+@import "./main";
+@import "./left_photo";
+@import "./navigation_logic";
+@import "./media_queries";
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    overflow: hidden;
+}
